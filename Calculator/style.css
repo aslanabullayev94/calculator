@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.calculator {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto;
+  width: 350px;
+  height: 550px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 35px black;
+          box-shadow: 2px 2px 35px black;
+  border: 3px solid orange;
+}
+
+.calculator .screen {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  width: 320px;
+  padding: 10px;
+  font-size: 48px;
+}
+
+.calculator .numbers {
+  position: absolute;
+  top: 140px;
+  left: 15px;
+}
+
+.calculator .numbers .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculator .numbers .row span {
+  padding: 15px 25px;
+  background-color: darkgrey;
+  font-size: 36px;
+  margin: 15px 5px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calculator .numbers .row span:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.calculator .operators {
+  position: absolute;
+  top: 140px;
+  right: 15px;
+}
+
+.calculator .operators .operator-self {
+  margin: 15px 5px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.calculator .operators .operator-self:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=style.css.map */
